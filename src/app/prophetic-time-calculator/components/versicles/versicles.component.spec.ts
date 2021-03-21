@@ -8,9 +8,9 @@ describe('VersiclesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VersiclesComponent ]
+      declarations: [VersiclesComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

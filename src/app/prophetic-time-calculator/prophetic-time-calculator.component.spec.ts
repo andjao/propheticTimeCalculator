@@ -8,9 +8,9 @@ describe('PropheticTimeCalculatorComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PropheticTimeCalculatorComponent ]
+      declarations: [PropheticTimeCalculatorComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
