@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --host 0.0.0.0 --ssl true",
+    "start:prod": "ng serve --prod --host 0.0.0.0 --ssl true",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy:github-pages": "rimraf dist && ng build --prod --base-href https://andjao.github.io/propheticTimeCalculator/ && ngh --branch=master"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +21,10 @@
     "@angular/platform-browser": "~11.2.6",
     "@angular/platform-browser-dynamic": "~11.2.6",
     "@angular/router": "~11.2.6",
+    "@angular/service-worker": "~11.2.6",
+    "angular-cli-ghpages": "^1.0.0-rc.1",
+    "ngh": "^0.2.12",
+    "ngx-pwa-icons": "^0.1.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
