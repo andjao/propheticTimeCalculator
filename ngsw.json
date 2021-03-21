@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1616343824261,
+  "timestamp": 1616344840409,
   "index": "https://andjao.github.io/propheticTimeCalculator/index.html",
   "assetGroups": [
     {
@@ -43,14 +43,14 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-128x128.png": "aa09c5a4a84553a81d1858eb1dcdf034e870d361",
+    "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-144x144.png": "92f3c600921656c990c4fd97d4b459227ca08c57",
+    "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-152x152.png": "25a34ab5dd741767bc3afc1b2a1b438825b31399",
+    "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-192x192.png": "5e4507e6b8b9e14b5f02b6b24e5a31b703d372f5",
+    "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-384x384.png": "b19bc02a82f525db159af3477c80995dcbe3b608",
+    "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-512x512.png": "a7d9795f766581642c41b41bad71dba6128207fd",
+    "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-72x72.png": "41442f1f042e6954761e32eaa3c24c6adc9f4281",
+    "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-96x96.png": "92a2577d12995837fb9690d862dcf00ce156f0d4",
     "https://andjao.github.io/propheticTimeCalculator/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
     "https://andjao.github.io/propheticTimeCalculator/index.html": "b6df77b54c5d37d9ce71187114b6a08e4c0cee4a",
     "https://andjao.github.io/propheticTimeCalculator/main.1aa97964e8e5f9cb83e5.js": "3a9f312b640fcc1069eab4516445346c8a42874a",
