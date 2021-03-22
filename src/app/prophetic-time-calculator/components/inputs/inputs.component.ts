@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { SharedService } from '../../services';
 
 
@@ -9,7 +9,7 @@ import { SharedService } from '../../services';
 })
 export class InputsComponent implements OnInit {
 
-  timeValue: number;
+  @ViewChild("timeValue") timeValue: ElementRef;
   timeConvert: number;
 
   constructor(
@@ -20,34 +20,40 @@ export class InputsComponent implements OnInit {
   }
 
   calculate(type: string): void {
+    let timeValue: number = this.timeValue.nativeElement.value;
+    this.sharedService.inputValue = timeValue;
+    this.sharedService.dateType = type;
     switch (type) {
-      case 'second':
-        this.timeConvert = this.timeValue / 24 / 60 / 60;
+      case 'seconds':
+        this.timeConvert = timeValue / 24 / 60 / 60;
         break;
-      case 'minute':
-        this.timeConvert = this.timeValue / 24 / 60;
+      case 'minutes':
+        this.timeConvert = timeValue / 24 / 60;
         break;
-      case 'hour':
-        this.timeConvert = this.timeValue / 24;
+      case 'hours':
+        this.timeConvert = timeValue / 24;
         break;
-      case 'day':
-        this.timeConvert = this.timeValue;
+      case 'days':
+        this.timeConvert = Number(timeValue);
         break;
-      case 'week':
-        this.timeConvert = this.timeValue * 7;
+      case 'weeks':
+        this.timeConvert = timeValue * 7;
         break;
-      case 'month':
-        this.timeConvert = this.timeValue * 30;
+      case 'months':
+        this.timeConvert = timeValue * 30;
         break;
-      case 'year':
-        this.timeConvert = this.timeValue * 365;
+      case 'years':
+        this.timeConvert = timeValue * 365;
     }
-    this.sharedService.resultValues.months = (this.timeConvert * 12);
-    this.sharedService.resultValues.weeks = (this.timeConvert * 52);
-    this.sharedService.resultValues.days = (this.timeConvert * 365);
-    this.sharedService.resultValues.hours = (this.sharedService.resultValues.days * 24);
-    this.sharedService.resultValues.minutes = (this.sharedService.resultValues.hours * 60);
-    this.sharedService.resultValues.seconds = (this.sharedService.resultValues.minutes * 60);
+    this.sharedService.resultValues = {
+      years: Math.floor(this.timeConvert),
+      months: Math.floor(this.timeConvert * 12),
+      weeks: Math.floor(this.timeConvert * 52),
+      days: Math.floor(this.timeConvert * 365),
+      hours: Math.floor(this.timeConvert * 365 * 24),
+      minutes: Math.floor(this.timeConvert * 365 * 24 * 60),
+      seconds: Math.floor(this.timeConvert * 365 * 24 * 60 * 60),
+    }
   }
 
 }

@@ -1,14 +1,23 @@
 export enum PtBr {
     title = "Calculadora de Tempo Profético",
-    typeTime = "Digite um tempo literal",
+    toTypeTime = "Digite um tempo literal",
+    second = "Segundo",
     seconds = "Segundos",
+    minute = "Minuto",
     minutes = "Minutos",
+    hour = "Hora",
     hours = "Horas",
+    day = "Dia",
     days = "Dias",
+    week = "Semana",
     weeks = "Semanas",
-    months = "Mesês",
+    month = "Mês",
+    months = "Mêses",
+    year = "Ano",
     years = "Anos",
     result = "Resultado",
-    literalEquals = "literal Equivale"
-
+    literalEquals = "literal equivale",
+    literalsEquals = "literais equivale",
+    prophetic = "profético",
+    prophetics = "proféticos",
 }
