@@ -1,1 +1,15 @@
-<p>inputs works!</p>
+<div class="inputs">
+  <form>
+    <label for="">{{sharedService.langTexts.typeTime}}: </label>
+    <input type="number" name="timeValue">
+    <div class="button">
+      <button (click)="calculate('second')">{{sharedService.langTexts.seconds}}</button>
+      <button (click)="calculate('minute')">{{sharedService.langTexts.minutes}}</button>
+      <button (click)="calculate('hour')">{{sharedService.langTexts.hours}}</button>
+      <button (click)="calculate('day')">{{sharedService.langTexts.days}}</button>
+      <button (click)="calculate('week')">{{sharedService.langTexts.weeks}}</button>
+      <button (click)="calculate('month')">{{sharedService.langTexts.months}}</button>
+      <button (click)="calculate('year')">{{sharedService.langTexts.years}}</button>
+    </div>
+  </form>
+</div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from '../../services';
+
 
 @Component({
   selector: 'app-inputs',
@@ -7,9 +9,45 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputsComponent implements OnInit {
 
-  constructor() { }
+  timeValue: number;
+  timeConvert: number;
+
+  constructor(
+    public sharedService: SharedService
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  calculate(type: string): void {
+    switch (type) {
+      case 'second':
+        this.timeConvert = this.timeValue / 24 / 60 / 60;
+        break;
+      case 'minute':
+        this.timeConvert = this.timeValue / 24 / 60;
+        break;
+      case 'hour':
+        this.timeConvert = this.timeValue / 24;
+        break;
+      case 'day':
+        this.timeConvert = this.timeValue;
+        break;
+      case 'week':
+        this.timeConvert = this.timeValue * 7;
+        break;
+      case 'month':
+        this.timeConvert = this.timeValue * 30;
+        break;
+      case 'year':
+        this.timeConvert = this.timeValue * 365;
+    }
+    this.sharedService.resultValues.months = (this.timeConvert * 12);
+    this.sharedService.resultValues.weeks = (this.timeConvert * 52);
+    this.sharedService.resultValues.days = (this.timeConvert * 365);
+    this.sharedService.resultValues.hours = (this.sharedService.resultValues.days * 24);
+    this.sharedService.resultValues.minutes = (this.sharedService.resultValues.hours * 60);
+    this.sharedService.resultValues.seconds = (this.sharedService.resultValues.minutes * 60);
   }
 
 }

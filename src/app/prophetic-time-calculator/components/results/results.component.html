@@ -1,1 +1,13 @@
-<p>results works!</p>
+<div class="results" *ngIf="!sharedService.resultValues">
+  <p class="title">{{sharedService.langTexts.result}}:</p>
+  <p>
+    {{sharedService.inputValue}}<br>
+    {{sharedService.langTexts.seconds}}<br>
+    {{sharedService.langTexts.minutes}}<br>
+    {{sharedService.langTexts.hours}}<br>
+    {{sharedService.langTexts.days}}<br>
+    {{sharedService.langTexts.weeks}}<br>
+    {{sharedService.langTexts.months}}<br>
+    {{sharedService.langTexts.years}}<br>
+  </p>
+</div>

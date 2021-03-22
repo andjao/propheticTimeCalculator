@@ -2,11 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PropheticTimeCalculatorRoutingModule } from './prophetic-time-calculator-routing.module';
-import { HeaderComponent } from './components/header/header.component';
-import { InputsComponent } from './components/inputs/inputs.component';
-import { ResultsComponent } from './components/results/results.component';
-import { VersiclesComponent } from './components/versicles/versicles.component';
-import { FooterComponent } from './components/footer/footer.component';
+import {
+  HeaderComponent,
+  InputsComponent,
+  ResultsComponent,
+  VersiclesComponent,
+  FooterComponent
+} from './components';
+import { SharedService } from './services/shared.service';
 
 
 @NgModule({
@@ -26,6 +29,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ResultsComponent,
     VersiclesComponent,
     FooterComponent,
+  ], providers: [
+    SharedService
   ]
 })
 export class PropheticTimeCalculatorModule { }
