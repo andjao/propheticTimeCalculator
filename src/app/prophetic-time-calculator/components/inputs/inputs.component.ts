@@ -1,23 +1,18 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { SharedService } from '../../services';
 
-
 @Component({
   selector: 'app-inputs',
   templateUrl: './inputs.component.html',
-  styleUrls: ['./inputs.component.scss']
+  styleUrls: ['./inputs.component.scss'],
 })
 export class InputsComponent implements OnInit {
-
-  @ViewChild("timeValue") timeValue: ElementRef;
+  @ViewChild('timeValue') timeValue: ElementRef;
   timeConvert: number;
 
-  constructor(
-    public sharedService: SharedService
-  ) { }
+  constructor(public sharedService: SharedService) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   calculate(type: string): void {
     let timeValue: number = this.timeValue.nativeElement.value;
@@ -53,7 +48,6 @@ export class InputsComponent implements OnInit {
       hours: Math.floor(this.timeConvert * 365 * 24),
       minutes: Math.floor(this.timeConvert * 365 * 24 * 60),
       seconds: Math.floor(this.timeConvert * 365 * 24 * 60 * 60),
-    }
+    };
   }
-
 }

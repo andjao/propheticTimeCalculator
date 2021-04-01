@@ -9,17 +9,16 @@ import { PropheticTimeCalculatorModule } from './prophetic-time-calculator/proph
 import { PropheticTimeCalculatorComponent } from './prophetic-time-calculator/prophetic-time-calculator.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    PropheticTimeCalculatorComponent,
-  ],
+  declarations: [AppComponent, PropheticTimeCalculatorComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    PropheticTimeCalculatorModule
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+    }),
+    PropheticTimeCalculatorModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

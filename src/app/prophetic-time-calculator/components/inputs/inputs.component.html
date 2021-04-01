@@ -1,13 +1,27 @@
 <div class="inputs">
-  <label for="">{{sharedService.langTexts.toTypeTime}}: </label>
-  <input type="number" #timeValue>
+  <label for="">{{ sharedService.langTexts.toTypeTime }}: </label>
+  <input type="number" #timeValue />
   <div class="button">
-    <button (click)="calculate('seconds')">{{sharedService.langTexts.seconds}}</button>
-    <button (click)="calculate('minutes')">{{sharedService.langTexts.minutes}}</button>
-    <button (click)="calculate('hours')">{{sharedService.langTexts.hours}}</button>
-    <button (click)="calculate('days')">{{sharedService.langTexts.days}}</button>
-    <button (click)="calculate('weeks')">{{sharedService.langTexts.weeks}}</button>
-    <button (click)="calculate('months')">{{sharedService.langTexts.months}}</button>
-    <button (click)="calculate('years')">{{sharedService.langTexts.years}}</button>
+    <button (click)="calculate('seconds')">
+      {{ sharedService.langTexts.seconds }}
+    </button>
+    <button (click)="calculate('minutes')">
+      {{ sharedService.langTexts.minutes }}
+    </button>
+    <button (click)="calculate('hours')">
+      {{ sharedService.langTexts.hours }}
+    </button>
+    <button (click)="calculate('days')">
+      {{ sharedService.langTexts.days }}
+    </button>
+    <button (click)="calculate('weeks')">
+      {{ sharedService.langTexts.weeks }}
+    </button>
+    <button (click)="calculate('months')">
+      {{ sharedService.langTexts.months }}
+    </button>
+    <button (click)="calculate('years')">
+      {{ sharedService.langTexts.years }}
+    </button>
   </div>
 </div>

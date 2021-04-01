@@ -1,3 +1,1 @@
-export enum EnUs {
-    
-}
+export enum EnUs {}

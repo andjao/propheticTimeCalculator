@@ -5,16 +5,12 @@ import { SharedService } from '../../services';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-
-  constructor(
-    public sharedService: SharedService
-  ) { }
+  constructor(public sharedService: SharedService) {}
 
   ngOnInit(): void {
     this.sharedService.langTexts = PtBr;
   }
-
 }

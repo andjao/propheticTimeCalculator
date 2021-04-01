@@ -1,3 +1,1 @@
-export enum EsEs {
-    
-}
+export enum EsEs {}

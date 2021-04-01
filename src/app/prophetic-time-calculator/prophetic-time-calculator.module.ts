@@ -7,10 +7,9 @@ import {
   InputsComponent,
   ResultsComponent,
   VersiclesComponent,
-  FooterComponent
+  FooterComponent,
 } from './components';
 import { SharedService } from './services/shared.service';
-
 
 @NgModule({
   declarations: [
@@ -18,19 +17,16 @@ import { SharedService } from './services/shared.service';
     InputsComponent,
     ResultsComponent,
     VersiclesComponent,
-    FooterComponent
+    FooterComponent,
   ],
-  imports: [
-    CommonModule,
-    PropheticTimeCalculatorRoutingModule,
-  ], exports: [
+  imports: [CommonModule, PropheticTimeCalculatorRoutingModule],
+  exports: [
     HeaderComponent,
     InputsComponent,
     ResultsComponent,
     VersiclesComponent,
     FooterComponent,
-  ], providers: [
-    SharedService
-  ]
+  ],
+  providers: [SharedService],
 })
-export class PropheticTimeCalculatorModule { }
+export class PropheticTimeCalculatorModule {}
