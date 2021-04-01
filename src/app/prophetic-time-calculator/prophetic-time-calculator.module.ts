@@ -9,7 +9,8 @@ import {
   VersiclesComponent,
   FooterComponent,
 } from './components';
-import { SharedService } from './services/shared.service';
+import { SharedService, ApiService } from './services';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,11 @@ import { SharedService } from './services/shared.service';
     VersiclesComponent,
     FooterComponent,
   ],
-  imports: [CommonModule, PropheticTimeCalculatorRoutingModule],
+  imports: [
+    CommonModule,
+    PropheticTimeCalculatorRoutingModule,
+    HttpClientModule,
+  ],
   exports: [
     HeaderComponent,
     InputsComponent,
@@ -27,6 +32,6 @@ import { SharedService } from './services/shared.service';
     VersiclesComponent,
     FooterComponent,
   ],
-  providers: [SharedService],
+  providers: [SharedService, ApiService],
 })
 export class PropheticTimeCalculatorModule {}

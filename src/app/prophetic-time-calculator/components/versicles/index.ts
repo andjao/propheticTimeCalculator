@@ -1,1 +1,1 @@
-export * from './versicles.component';
+export * from "./versicles.component";
