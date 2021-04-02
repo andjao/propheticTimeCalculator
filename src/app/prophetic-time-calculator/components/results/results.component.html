@@ -1,33 +1,33 @@
 <div class="results" *ngIf="sharedService.resultValues">
   <p class="title">{{ sharedService.langTexts.result }}:</p>
   <p>
-    {{ sharedService.inputValue }}
-    {{ verifyPlural("input", sharedService.inputValue) | lowercase }}
-    {{ verifyPlural("literalEquals", sharedService.inputValue) }}:<br />
-    {{ sharedService.resultValues.seconds }}
+    {{ sharedService.resultValues.data.timeValue }}
+    {{ verifyPlural("input", sharedService.resultValues.data.timeValue) | lowercase }}
+    {{ verifyPlural("literalEquals", sharedService.resultValues.data.timeValue) }}:<br />
+    {{ sharedService.resultValues.convertion.seconds }}
     {{
-      verifyPlural("seconds", sharedService.resultValues.seconds) | lowercase
+      verifyPlural("seconds", sharedService.resultValues.convertion.seconds) | lowercase
     }}
-    {{ verifyPlural("prophetics", sharedService.resultValues.seconds) }}<br />
-    {{ sharedService.resultValues.minutes }}
+    {{ verifyPlural("prophetics", sharedService.resultValues.convertion.seconds) }}<br />
+    {{ sharedService.resultValues.convertion.minutes }}
     {{
-      verifyPlural("minutes", sharedService.resultValues.minutes) | lowercase
+      verifyPlural("minutes", sharedService.resultValues.convertion.minutes) | lowercase
     }}
-    {{ verifyPlural("prophetics", sharedService.resultValues.minutes) }}<br />
-    {{ sharedService.resultValues.hours }}
-    {{ verifyPlural("hours", sharedService.resultValues.hours) | lowercase }}
-    {{ verifyPlural("prophetics", sharedService.resultValues.hours) }}<br />
-    {{ sharedService.resultValues.days }}
-    {{ verifyPlural("days", sharedService.resultValues.days) | lowercase }}
-    {{ verifyPlural("prophetics", sharedService.resultValues.days) }}<br />
-    {{ sharedService.resultValues.weeks }}
-    {{ verifyPlural("weeks", sharedService.resultValues.weeks) | lowercase }}
-    {{ verifyPlural("prophetics", sharedService.resultValues.weeks) }}<br />
-    {{ sharedService.resultValues.months }}
-    {{ verifyPlural("months", sharedService.resultValues.months) | lowercase }}
-    {{ verifyPlural("prophetics", sharedService.resultValues.months) }}<br />
-    {{ sharedService.resultValues.years }}
-    {{ verifyPlural("years", sharedService.resultValues.years) | lowercase }}
-    {{ verifyPlural("prophetics", sharedService.resultValues.years) }}<br />
+    {{ verifyPlural("prophetics", sharedService.resultValues.convertion.minutes) }}<br />
+    {{ sharedService.resultValues.convertion.hours }}
+    {{ verifyPlural("hours", sharedService.resultValues.convertion.hours) | lowercase }}
+    {{ verifyPlural("prophetics", sharedService.resultValues.convertion.hours) }}<br />
+    {{ sharedService.resultValues.convertion.days }}
+    {{ verifyPlural("days", sharedService.resultValues.convertion.days) | lowercase }}
+    {{ verifyPlural("prophetics", sharedService.resultValues.convertion.days) }}<br />
+    {{ sharedService.resultValues.convertion.weeks }}
+    {{ verifyPlural("weeks", sharedService.resultValues.convertion.weeks) | lowercase }}
+    {{ verifyPlural("prophetics", sharedService.resultValues.convertion.weeks) }}<br />
+    {{ sharedService.resultValues.convertion.months }}
+    {{ verifyPlural("months", sharedService.resultValues.convertion.months) | lowercase }}
+    {{ verifyPlural("prophetics", sharedService.resultValues.convertion.months) }}<br />
+    {{ sharedService.resultValues.convertion.years }}
+    {{ verifyPlural("years", sharedService.resultValues.convertion.years) | lowercase }}
+    {{ verifyPlural("prophetics", sharedService.resultValues.convertion.years) }}<br />
   </p>
 </div>

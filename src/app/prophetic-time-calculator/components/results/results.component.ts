@@ -16,9 +16,9 @@ export class ResultsComponent implements OnInit {
       if (type === 'input') {
         if (value < 2)
           return this.sharedService.langTexts[
-            this.sharedService.dateType
+            this.sharedService.resultValues.data.type
           ].replace('s', '');
-        return this.sharedService.langTexts[this.sharedService.dateType];
+        return this.sharedService.langTexts[this.sharedService.resultValues.data.type];
       } else if (type === 'literalEquals') {
         if (value < 2) return this.sharedService.langTexts.literalEquals;
         return this.sharedService.langTexts.literalsEquals;

@@ -7,7 +7,5 @@ import { ResultValues } from '../models';
 export class SharedService {
   constructor() {}
   langTexts: any;
-  inputValue: number;
-  dateType: string;
   resultValues: ResultValues;
 }

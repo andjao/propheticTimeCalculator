@@ -21,7 +21,7 @@ export class InputsComponent implements OnInit {
     this.apiService
       .getValues(type, this.timeValue.nativeElement.value)
       .subscribe((res) => {
-        this.sharedService.resultValues = res.convertion;
+        this.sharedService.resultValues = res;
       });
   }
 }

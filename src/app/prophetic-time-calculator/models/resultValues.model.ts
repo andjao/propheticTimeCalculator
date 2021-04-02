@@ -1,11 +1,17 @@
 export class ResultValues {
   constructor(
-    public seconds: number,
-    public minutes: number,
-    public hours: number,
-    public days: number,
-    public weeks: number,
-    public months: number,
-    public years: number
+    public data: {
+      type: string;
+      timeValue: number;
+    },
+    public convertion: {
+      seconds: number;
+      minutes: number;
+      hours: number;
+      days: number;
+      weeks: number;
+      months: number;
+      years: number;
+    }
   ) {}
 }
