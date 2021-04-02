@@ -1,4 +1,4 @@
-<div class="inputs">
+<div class="inputs" *ngIf="sharedService.langTexts">
   <label for="">{{ sharedService.langTexts.toTypeTime }}: </label>
   <input type="number" #timeValue />
   <div class="button">

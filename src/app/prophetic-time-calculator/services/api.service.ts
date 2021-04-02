@@ -18,6 +18,18 @@ export class ApiService {
     return API.apiLocal;
   }
 
+  getLang(lang: string) {
+    const params = new HttpParams({
+      fromObject: {
+        lang: lang,
+      },
+    });
+
+    return this.http.get(`${this.api}${this.propheticTimeCalculator}/lang`, {
+      params,
+    });
+  }
+
   getValues(type: string, timeValue: number): Observable<any> {
     const params = new HttpParams({
       fromObject: {
