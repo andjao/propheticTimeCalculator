@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1617321975243,
+  "timestamp": 1617325550269,
   "index": "https://andjao.github.io/propheticTimeCalculator/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://andjao.github.io/propheticTimeCalculator/favicon.ico",
         "https://andjao.github.io/propheticTimeCalculator/index.html",
-        "https://andjao.github.io/propheticTimeCalculator/main.2f7eadc629870ddf5a66.js",
+        "https://andjao.github.io/propheticTimeCalculator/main.6eb05bd1fbfdcb6efc40.js",
         "https://andjao.github.io/propheticTimeCalculator/manifest.webmanifest",
         "https://andjao.github.io/propheticTimeCalculator/polyfills.00096ed7d93ed26ee6df.js",
         "https://andjao.github.io/propheticTimeCalculator/runtime.7b63b9fd40098a2e8207.js",
@@ -54,8 +54,8 @@
     "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-72x72.png": "41442f1f042e6954761e32eaa3c24c6adc9f4281",
     "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-96x96.png": "92a2577d12995837fb9690d862dcf00ce156f0d4",
     "https://andjao.github.io/propheticTimeCalculator/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://andjao.github.io/propheticTimeCalculator/index.html": "ff4eb7ef962727aca5e5db72d6019e11d30665e3",
-    "https://andjao.github.io/propheticTimeCalculator/main.2f7eadc629870ddf5a66.js": "d7e31b24f4d8dad7034898427a02ed13cc8bf8e0",
+    "https://andjao.github.io/propheticTimeCalculator/index.html": "4d89e662535446aa9c44dc07d3e7555110406a32",
+    "https://andjao.github.io/propheticTimeCalculator/main.6eb05bd1fbfdcb6efc40.js": "c44ee25f22107c4603d7b5a214b94983f33d3933",
     "https://andjao.github.io/propheticTimeCalculator/manifest.webmanifest": "f79bf83e372bcfc77fdc338184deb404dcfe4e76",
     "https://andjao.github.io/propheticTimeCalculator/polyfills.00096ed7d93ed26ee6df.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
     "https://andjao.github.io/propheticTimeCalculator/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
