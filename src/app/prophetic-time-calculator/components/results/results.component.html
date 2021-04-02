@@ -1,33 +1,4 @@
 <div class="results" *ngIf="sharedService.resultValues">
   <p class="title">{{ sharedService.langTexts.result }}:</p>
-  <p>
-    {{ sharedService.resultValues.data.timeValue }}
-    {{ verifyPlural("input", sharedService.resultValues.data.timeValue) | lowercase }}
-    {{ verifyPlural("literalEquals", sharedService.resultValues.data.timeValue) }}:<br />
-    {{ sharedService.resultValues.convertion.seconds }}
-    {{
-      verifyPlural("seconds", sharedService.resultValues.convertion.seconds) | lowercase
-    }}
-    {{ verifyPlural("prophetics", sharedService.resultValues.convertion.seconds) }}<br />
-    {{ sharedService.resultValues.convertion.minutes }}
-    {{
-      verifyPlural("minutes", sharedService.resultValues.convertion.minutes) | lowercase
-    }}
-    {{ verifyPlural("prophetics", sharedService.resultValues.convertion.minutes) }}<br />
-    {{ sharedService.resultValues.convertion.hours }}
-    {{ verifyPlural("hours", sharedService.resultValues.convertion.hours) | lowercase }}
-    {{ verifyPlural("prophetics", sharedService.resultValues.convertion.hours) }}<br />
-    {{ sharedService.resultValues.convertion.days }}
-    {{ verifyPlural("days", sharedService.resultValues.convertion.days) | lowercase }}
-    {{ verifyPlural("prophetics", sharedService.resultValues.convertion.days) }}<br />
-    {{ sharedService.resultValues.convertion.weeks }}
-    {{ verifyPlural("weeks", sharedService.resultValues.convertion.weeks) | lowercase }}
-    {{ verifyPlural("prophetics", sharedService.resultValues.convertion.weeks) }}<br />
-    {{ sharedService.resultValues.convertion.months }}
-    {{ verifyPlural("months", sharedService.resultValues.convertion.months) | lowercase }}
-    {{ verifyPlural("prophetics", sharedService.resultValues.convertion.months) }}<br />
-    {{ sharedService.resultValues.convertion.years }}
-    {{ verifyPlural("years", sharedService.resultValues.convertion.years) | lowercase }}
-    {{ verifyPlural("prophetics", sharedService.resultValues.convertion.years) }}<br />
-  </p>
+  <p></p>
 </div>

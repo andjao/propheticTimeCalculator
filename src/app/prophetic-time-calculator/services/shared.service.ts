@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { ResultValues } from '../models';
+import { LangTexts, ResultValues } from '../models';
 
 @Injectable({
   providedIn: 'root',
 })
 export class SharedService {
   constructor() {}
-  langTexts: any;
+  langTexts: LangTexts;
   resultValues: ResultValues;
 }
