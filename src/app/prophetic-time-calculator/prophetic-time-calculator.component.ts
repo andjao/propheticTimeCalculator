@@ -15,8 +15,4 @@ export class PropheticTimeCalculatorComponent implements OnInit {
   }
 
   ngOnInit(): void { }
-
-  switchLang(lang: string) {
-    this.translate.use(lang);
-  }
 }

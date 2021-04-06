@@ -11,9 +11,7 @@ export class ResultsComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  concatF(a: string, b: string) {
-    console.log(a.slice(0, -1) + b);
-
-    return String(a.slice(0, -1) + b);
+  removePlural(word: string) {
+    return String(word.slice(0, -1));
   }
 }

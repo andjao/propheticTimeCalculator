@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./versicles.component.scss'],
 })
 export class VersiclesComponent implements OnInit {
-  constructor() {}
+  versicle: number = 0;
 
-  ngOnInit(): void {}
+  constructor() { }
+
+  ngOnInit(): void { }
+
+  changeVersicle(versicle: number) {
+    this.versicle = versicle;
+  }
 }

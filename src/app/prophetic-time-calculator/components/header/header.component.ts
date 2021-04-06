@@ -13,5 +13,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void { }
 
-
+  switchLang(lang: string) {
+    this.translate.use(lang);
+  }
 }

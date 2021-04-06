@@ -1,1 +1,5 @@
-
+<div class="versicles">
+    <p>{{('versicles.' + versicle) | translate}}</p>
+    <button (click)="changeVersicle(0)">voltar</button>
+    <button (click)="changeVersicle(1)">avançar</button>
+</div>
