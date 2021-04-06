@@ -1,3 +1,11 @@
-<div class="header" *ngIf="sharedService.langTexts">
-  <h6 class="title">{{ sharedService.langTexts.title }}</h6>
+<div class="header">
+  <h6 class="title">{{ 'title' | translate }}</h6>
+  <span>
+    <select #selectedLang (change)="switchLang(selectedLang.value)">
+      <option *ngFor="let language of translate.getLangs()" [value]="language"
+        [selected]="language === translate.currentLang">
+        {{ language }}
+      </option>
+    </select>
+  </span>
 </div>

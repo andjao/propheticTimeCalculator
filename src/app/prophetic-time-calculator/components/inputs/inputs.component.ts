@@ -12,10 +12,10 @@ export class InputsComponent implements OnInit {
 
   constructor(
     public sharedService: SharedService,
-    private apiService: ApiService
-  ) {}
+    private apiService: ApiService,
+  ) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   calculate(type: string): void {
     this.apiService

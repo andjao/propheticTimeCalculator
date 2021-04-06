@@ -1,27 +1,27 @@
-<div class="inputs" *ngIf="sharedService.langTexts">
-  <label for="">{{ sharedService.langTexts.toTypeTime }}: </label>
+<div class="inputs">
+  <label for="">{{ 'toTypeTime' | translate }}: </label>
   <input type="number" #timeValue />
   <div class="button">
     <button (click)="calculate('seconds')">
-      {{ sharedService.langTexts.seconds }}
+      {{ 'seconds' | translate }}
     </button>
     <button (click)="calculate('minutes')">
-      {{ sharedService.langTexts.minutes }}
+      {{ 'minutes' | translate }}
     </button>
     <button (click)="calculate('hours')">
-      {{ sharedService.langTexts.hours }}
+      {{ 'hours' | translate }}
     </button>
     <button (click)="calculate('days')">
-      {{ sharedService.langTexts.days }}
+      {{ 'days' | translate }}
     </button>
     <button (click)="calculate('weeks')">
-      {{ sharedService.langTexts.weeks }}
+      {{ 'weeks' | translate}}
     </button>
     <button (click)="calculate('months')">
-      {{ sharedService.langTexts.months }}
+      {{ 'months' | translate}}
     </button>
     <button (click)="calculate('years')">
-      {{ sharedService.langTexts.years }}
+      {{ 'years' | translate}}
     </button>
   </div>
 </div>

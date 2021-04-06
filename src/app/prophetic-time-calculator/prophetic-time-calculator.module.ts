@@ -10,7 +10,10 @@ import {
   FooterComponent,
 } from './components';
 import { SharedService, ApiService } from './services';
-import { HttpClientModule } from '@angular/common/http';
+
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,13 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     PropheticTimeCalculatorRoutingModule,
     HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpTranslateLoader,
+        deps: [HttpClient]
+      }
+    }),
   ],
   exports: [
     HeaderComponent,
@@ -34,4 +44,8 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   providers: [SharedService, ApiService],
 })
-export class PropheticTimeCalculatorModule {}
+export class PropheticTimeCalculatorModule { }
+
+export function httpTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService, SharedService } from '../../services';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -8,13 +8,15 @@ import { ApiService, SharedService } from '../../services';
 })
 export class HeaderComponent implements OnInit {
   constructor(
-    private apiService: ApiService,
-    public sharedService: SharedService
-  ) {}
+    public translate: TranslateService
+  ) {
+    translate.addLangs(['pt', 'en', 'es']);
+    translate.setDefaultLang('pt');
+  }
 
-  ngOnInit(): void {
-    this.apiService.getLang('pt-br').subscribe((res) => {
-      this.sharedService.langTexts = res;
-    });
+  ngOnInit(): void { }
+
+  switchLang(lang: string) {
+    this.translate.use(lang);
   }
 }

@@ -1,4 +1,21 @@
 <div class="results" *ngIf="sharedService.resultValues">
-  <p class="title">{{ sharedService.langTexts.result }}:</p>
-  <p></p>
+  <p class="title">{{ 'result' | translate }}:</p>
+  <p>
+    {{sharedService.resultValues.data.timeValue}} {{sharedService.resultValues.data.timeValue < 2 ?
+      concatF(sharedService.resultValues.data.type, "LiteralEquals" ) : sharedService.resultValues.data.type
+      + "LiteralsEquals" | translate}}:<br>
+      {{sharedService.resultValues.convertion.seconds}} {{sharedService.resultValues.convertion.seconds < 2
+        ? "secondProphetic" : "secondsProphetics" | translate}}<br>
+        {{sharedService.resultValues.convertion.minutes}} {{sharedService.resultValues.convertion.minutes < 2
+          ? "minuteProphetic" : "minutesProphetics" | translate}}<br>
+          {{sharedService.resultValues.convertion.hours}} {{sharedService.resultValues.convertion.hours < 2
+            ? "hourProphetic" : "hoursProphetics" | translate}}<br>
+            {{sharedService.resultValues.convertion.days}} {{sharedService.resultValues.convertion.days < 2
+              ? "dayProphetic" : "daysProphetics" | translate}}<br>
+              {{sharedService.resultValues.convertion.weeks}} {{sharedService.resultValues.convertion.weeks < 2
+                ? "weekProphetic" : "weeksProphetics" | translate}}<br>
+                {{sharedService.resultValues.convertion.months}} {{sharedService.resultValues.convertion.months < 2
+                  ? "monthProphetic" : "monthsProphetics" | translate}}<br>
+                  {{sharedService.resultValues.convertion.years}} {{sharedService.resultValues.convertion.years < 2
+                    ? "yearProphetic" : "yearsProphetics" | translate}} </p>
 </div>

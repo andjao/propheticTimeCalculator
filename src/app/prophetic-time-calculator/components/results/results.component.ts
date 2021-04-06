@@ -7,7 +7,12 @@ import { SharedService } from '../../services';
   styleUrls: ['./results.component.scss'],
 })
 export class ResultsComponent implements OnInit {
-  constructor(public sharedService: SharedService) {}
+  constructor(public sharedService: SharedService) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
+
+  concatF(a: string, b: string): string {
+    console.log(a.replace("s", "") + b);
+    return a.replace("s", "") + b;
+  }
 }
