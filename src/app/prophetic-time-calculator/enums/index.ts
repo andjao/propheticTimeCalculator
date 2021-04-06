@@ -1,1 +1,2 @@
-export * from "./texts";
+export * from './api.enum';
+export * from './endpoints.enum';
