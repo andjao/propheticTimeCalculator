@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1617325550269,
+  "timestamp": 1617722285420,
   "index": "https://andjao.github.io/propheticTimeCalculator/index.html",
   "assetGroups": [
     {
@@ -13,9 +13,9 @@
       "urls": [
         "https://andjao.github.io/propheticTimeCalculator/favicon.ico",
         "https://andjao.github.io/propheticTimeCalculator/index.html",
-        "https://andjao.github.io/propheticTimeCalculator/main.6eb05bd1fbfdcb6efc40.js",
+        "https://andjao.github.io/propheticTimeCalculator/main.68490e645609b023de34.js",
         "https://andjao.github.io/propheticTimeCalculator/manifest.webmanifest",
-        "https://andjao.github.io/propheticTimeCalculator/polyfills.00096ed7d93ed26ee6df.js",
+        "https://andjao.github.io/propheticTimeCalculator/polyfills.94daefd414b8355106ab.js",
         "https://andjao.github.io/propheticTimeCalculator/runtime.7b63b9fd40098a2e8207.js",
         "https://andjao.github.io/propheticTimeCalculator/styles.fc2e35b78e35040a5505.css"
       ],
@@ -30,6 +30,9 @@
       },
       "urls": [
         "https://andjao.github.io/propheticTimeCalculator/Prophecy.5b1a7a80ca9245ee45c3.otf",
+        "https://andjao.github.io/propheticTimeCalculator/assets/i18n/en.json",
+        "https://andjao.github.io/propheticTimeCalculator/assets/i18n/es.json",
+        "https://andjao.github.io/propheticTimeCalculator/assets/i18n/pt.json",
         "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-128x128.png",
         "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-144x144.png",
         "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-152x152.png",
@@ -45,6 +48,9 @@
   "dataGroups": [],
   "hashTable": {
     "https://andjao.github.io/propheticTimeCalculator/Prophecy.5b1a7a80ca9245ee45c3.otf": "839ec01d2c0cc6e5fbb656ea89461a5e748e0924",
+    "https://andjao.github.io/propheticTimeCalculator/assets/i18n/en.json": "7c54b5705d31b36e9b72e1d27975499f33eda778",
+    "https://andjao.github.io/propheticTimeCalculator/assets/i18n/es.json": "c963ac50cc5aa9a2a8c0bfc863c339f2593834a8",
+    "https://andjao.github.io/propheticTimeCalculator/assets/i18n/pt.json": "11beadeaee4f21e87ebf567594c55fb915c58c9c",
     "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-128x128.png": "aa09c5a4a84553a81d1858eb1dcdf034e870d361",
     "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-144x144.png": "92f3c600921656c990c4fd97d4b459227ca08c57",
     "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-152x152.png": "25a34ab5dd741767bc3afc1b2a1b438825b31399",
@@ -54,10 +60,10 @@
     "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-72x72.png": "41442f1f042e6954761e32eaa3c24c6adc9f4281",
     "https://andjao.github.io/propheticTimeCalculator/assets/icons/icon-96x96.png": "92a2577d12995837fb9690d862dcf00ce156f0d4",
     "https://andjao.github.io/propheticTimeCalculator/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://andjao.github.io/propheticTimeCalculator/index.html": "4d89e662535446aa9c44dc07d3e7555110406a32",
-    "https://andjao.github.io/propheticTimeCalculator/main.6eb05bd1fbfdcb6efc40.js": "c44ee25f22107c4603d7b5a214b94983f33d3933",
-    "https://andjao.github.io/propheticTimeCalculator/manifest.webmanifest": "f79bf83e372bcfc77fdc338184deb404dcfe4e76",
-    "https://andjao.github.io/propheticTimeCalculator/polyfills.00096ed7d93ed26ee6df.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
+    "https://andjao.github.io/propheticTimeCalculator/index.html": "4a4ad7ffbf2544bfc804bcbedbd3b4d2e7ca44a8",
+    "https://andjao.github.io/propheticTimeCalculator/main.68490e645609b023de34.js": "69a20612d3ecc4a5008304c4b3e97e97f230ea4d",
+    "https://andjao.github.io/propheticTimeCalculator/manifest.webmanifest": "90d08a3f9b26f3d4461d6819551ffbd7b5f8680a",
+    "https://andjao.github.io/propheticTimeCalculator/polyfills.94daefd414b8355106ab.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
     "https://andjao.github.io/propheticTimeCalculator/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "https://andjao.github.io/propheticTimeCalculator/styles.fc2e35b78e35040a5505.css": "866a22d67d471022da096f3349d146657250f1d1"
   },
