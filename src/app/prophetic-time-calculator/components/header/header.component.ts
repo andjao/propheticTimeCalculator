@@ -9,14 +9,9 @@ import { TranslateService } from '@ngx-translate/core';
 export class HeaderComponent implements OnInit {
   constructor(
     public translate: TranslateService
-  ) {
-    translate.addLangs(['pt', 'en', 'es']);
-    translate.setDefaultLang('pt');
-  }
+  ) { }
 
   ngOnInit(): void { }
 
-  switchLang(lang: string) {
-    this.translate.use(lang);
-  }
+
 }

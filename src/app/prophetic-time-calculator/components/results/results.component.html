@@ -2,8 +2,8 @@
   <p class="title">{{ 'result' | translate }}:</p>
   <p>
     {{sharedService.resultValues.data.timeValue}} {{sharedService.resultValues.data.timeValue < 2 ?
-      concatF(sharedService.resultValues.data.type, "LiteralEquals" ) : sharedService.resultValues.data.type
-      + "LiteralsEquals" | translate}}:<br>
+      concatF(sharedService.resultValues.data.type, "LiteralEquals" ) : (sharedService.resultValues.data.type
+      + "LiteralsEquals" ) | translate}}:<br>
       {{sharedService.resultValues.convertion.seconds}} {{sharedService.resultValues.convertion.seconds < 2
         ? "secondProphetic" : "secondsProphetics" | translate}}<br>
         {{sharedService.resultValues.convertion.minutes}} {{sharedService.resultValues.convertion.minutes < 2

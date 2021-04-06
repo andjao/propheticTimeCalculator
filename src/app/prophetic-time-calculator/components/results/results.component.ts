@@ -11,8 +11,9 @@ export class ResultsComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  concatF(a: string, b: string): string {
-    console.log(a.replace("s", "") + b);
-    return a.replace("s", "") + b;
+  concatF(a: string, b: string) {
+    console.log(a.slice(0, -1) + b);
+
+    return String(a.slice(0, -1) + b);
   }
 }
