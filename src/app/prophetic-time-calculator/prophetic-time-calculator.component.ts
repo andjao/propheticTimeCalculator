@@ -8,7 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class PropheticTimeCalculatorComponent implements OnInit {
   constructor(
-    public translate: TranslateService
+    readonly translate: TranslateService
   ) {
     translate.addLangs(['pt', 'en', 'es']);
     translate.setDefaultLang('pt');
